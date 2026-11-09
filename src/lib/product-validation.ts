@@ -18,3 +18,11 @@ export const productSchema = z.object({
 export const activeSchema = z.object({
   active: z.boolean(),
 });
+
+export const stockSchema = z.object({
+  stock: z
+    .number()
+    .int("Le stock doit être un entier")
+    .min(0, "Le stock ne peut pas être négatif")
+    .max(1000000, "Quantité trop grande"),
+});

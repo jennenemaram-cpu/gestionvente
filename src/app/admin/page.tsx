@@ -15,6 +15,12 @@ export default async function AdminPage() {
       >
         Gérer les produits
       </Link>
+      <Link
+        href="/admin/stock"
+        className="inline-block rounded bg-blue-600 px-3 py-2 text-white"
+      >
+        Gérer le stock
+      </Link>
       <div>
         <LogoutButton />
       </div>
